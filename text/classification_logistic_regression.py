@@ -19,9 +19,7 @@ from sklearn.metrics import classification_report
 from sklearn.linear_model import LogisticRegression
 import time
 
-
 start_time = time.time()
-
 
 # 绘制 P/R 曲线
 def plot_pr(auc_score, precision, recall, label=None):
@@ -89,6 +87,7 @@ print("time spent: ", time.time() - start_time)
 # 如果是在shell或者终端中运行，只能生成图片文件，不能直接显示图形。
 plot_pr(0.5, precision, recall, "pos")
 
+# 以下是对训练好的模型进行应用，判断其他文本属于那一分类（neg/pos）
 test = [b'nb movie!\n']
 test1 = count_vec.transform(test)
 result = clf.predict_proba(test1)[:,1]
