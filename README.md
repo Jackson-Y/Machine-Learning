@@ -17,7 +17,7 @@ Machine Learning &amp; Deep Learning
   e.g.   
   > 中文：的、是、啊、吖、吧、呃，以及标点等  
   > 英文：is, a, an, one, yeah, 'll, 's, 'ld...  
-  > 网页中的的标记文本<html><div><script>等  
+  > 网页中的的标记文本\<html\>\<div\><script>等  
   
 ### 2) vectorizer & tf-idf weighting
 特征向量化、基于tf-idf的加权向量化算法：  
