@@ -16,7 +16,8 @@ Machine Learning &amp; Deep Learning
 去停用词：  
 e.g.   
   > 中文：的、是、啊、吖、吧、呃，以及标点等  
-  > 英文：is, a, an, one, yeah, 'll, 's, 'ld...
+  > 英文：is, a, an, one, yeah, 'll, 's, 'ld...  
+
 去一些无用信息：  
 e.g.  
   > 网页中的的标记文本<html><div><script>等  
