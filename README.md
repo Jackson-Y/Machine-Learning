@@ -5,4 +5,4 @@ Machine Learning &amp; AI &amp; Deep Learning
 ### 2) vectorizer & tf-idf weighting
 ### 3) classification
 - Logistic Regression
-- Navie Bayes
+- Naive Bayes
