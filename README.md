@@ -1,6 +1,6 @@
 # 从零开始机器学习 Machine Learning
 Machine Learning &amp; Deep Learning  
-> 本文适合有一定编程经验，对机器学习零基础的同学作为入门引导。 
+> 本文适合有一定编程经验，对机器学习零基础的同学作为入门引导。  
 > 本文主要以机器学习和深度学习算法的使用案列为主，不深究算法原理。
 
 ## 1. text
@@ -13,12 +13,12 @@ Machine Learning &amp; Deep Learning
   > 垃圾邮件 vs 非垃圾邮件、   
   > 正面评论 vs 负面评论  
 - 文本分词  
-  去停用词：  
-  e.g.   
+去停用词：  
+e.g.   
   > 中文：的、是、啊、吖、吧、呃，以及标点等  
-  > 英文：is, a, an, one, yeah, 'll, 's, 'ld...  
-  去一些无用信息：  
-  e.g.  
+  > 英文：is, a, an, one, yeah, 'll, 's, 'ld...
+去一些无用信息：  
+e.g.  
   > 网页中的的标记文本<html><div><script>等  
   
 ### 2) vectorizer & tf-idf weighting
