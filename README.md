@@ -11,8 +11,8 @@ Machine Learning &amp; Deep Learning
   e.g.  
   > 恶意网页 vs 非恶意网页、  
   > 垃圾邮件 vs 非垃圾邮件、  
-  > 正面评论 vs 负面评论、
-  > 财经、军事、汽车、房产  
+  > 正面评论 vs 负面评论、  
+  > 财经、军事、汽车、房产  
 - 文本分词  
   去停用词stop_words：  
   e.g.     
