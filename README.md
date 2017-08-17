@@ -19,12 +19,12 @@ Machine Learning &amp; Deep Learning
   > 英文：is, a, an, one, yeah, 'll, 's, 'ld...  
   > 网页中的的标记文本\<html\>\<div\><script>等  
   
-### 2) vectorizer & tf-idf weighting
-特征向量化、基于tf-idf的加权向量化算法：  
+### 2) vectorizer & tf-idf weighting（向量化 & 加权）
+特征向量化、基于tf-idf的加权向量化算法：  
 使用空间向量模型，把提取出来的特征转化为空间向量，并给不同的特征赋以不同的权重。  
   
-### 3) classification
-文本分类算法：  
+### 3) classification（分类）
+文本分类算法：  
 利用转换好的带有分类标记的空间向量，对特定的数据函数模型进行训练(逐步调优函数的参数)，  
 然后用训练出来的分类模型对未知数据集进行分类。  
 （目前的所使用的数据集训练出来的模型，分类准确率可以达到80%左右）  
