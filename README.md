@@ -7,15 +7,15 @@ Machine Learning &amp; Deep Learning
 文本（包括文本特征提取、向量化、加权、文本分类）
 ### 1) feature extraction（特征提取）
 - 文本标记  
-  标记即人工将已知的数据集分类加标签label：  
-  e.g.   
+  标记即人工将已知的数据集分类加标签label：  
+  e.g.    
   > 恶意网页 vs 非恶意网页、  
   > 垃圾邮件 vs 非垃圾邮件、  
   > 正面评论 vs 负面评论、  
   > 财经、军事、汽车、房产  
 - 文本分词  
-  去停用词stop_words：  
-  e.g.   
+  去停用词stop_words：  
+  e.g.     
   > 中文：的、是、啊、吖、吧、呃，以及标点等  
   > 英文：is, a, an, one, yeah, 'll, 's, 'ld...  
   > 网页中的的标记文本\<html\>\<div\><script>等  
