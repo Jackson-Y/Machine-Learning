@@ -9,9 +9,9 @@ Machine Learning &amp; Deep Learning
 - 文本标记  
   标记即人工将已知的数据集分类加标签label：  
   e.g.    
-  > 恶意网页 vs 非恶意网页、  
-  > 垃圾邮件 vs 非垃圾邮件、  
-  > 正面评论 vs 负面评论、  
+  > 恶意网页 vs 非恶意网页、  
+  > 垃圾邮件 vs 非垃圾邮件、  
+  > 正面评论 vs 负面评论、  
   > 财经、军事、汽车、房产  
 - 文本分词  
   去停用词stop_words：  
