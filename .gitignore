@@ -105,3 +105,9 @@ ENV/
 *.tar
 *.rar
 *.zip
+
+# model generation
+iris_model/
+
+# data file
+*.csv
