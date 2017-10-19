@@ -109,6 +109,8 @@ ENV/
 # model generation
 iris_model/
 ADULT_data/
+mnist_cnn_model/
+MNIST-data
 
 # data files
 *.csv
