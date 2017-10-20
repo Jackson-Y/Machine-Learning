@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-""" Wide & Deep Learning 宽度&深度学习结合的实例，基于tensorflow平台 """
+""" Wide & Deep Learning 宽度&深度学习模型，基于tensorflow平台 """
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
