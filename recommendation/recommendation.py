@@ -95,7 +95,11 @@ class UserBasedCF(object):
         N = self.n_recomendation_articles
         rank = {}
         print("user: ", user)
-        watched_articles = self.train_data[user]
+        # watched_articles = self.train_data[user]
+        watched_articles = self.train_data.get(user, {})
+        if watched_articles is None:
+            print(" [x] New User. ")
+            return []
 
         for v, wuv in sorted(self.user_similarity_matrix[user].items(), key=itemgetter(1), reverse=True)[0:K]:
             for article in self.train_data[v]:
@@ -162,8 +166,8 @@ if __name__ == '__main__':
     parser.register("type", "bool", lambda v: v.lower() == "true")
     parser.add_argument(
         "--uid",
-        type=str,
-        default='80871',
+        type=int,
+        default=80871,
         help="The user who is going to be recommended articles."
     )
     parser.add_argument(
