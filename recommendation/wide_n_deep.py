@@ -184,7 +184,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model_dir",
         type=str,
-        default="../exercise/ADULT_data",
+        default="./model/",
         help="Base directory for output models."
     )
     parser.add_argument(
