@@ -76,7 +76,7 @@ print(int *a, int size)
 
 int main(void)
 {
-    int a[] = {8, 2, 6, 3, 4, 5, 9, 0, 1, 7};
+    int a[] = {8, 2, 6, 3, 4, 5, 9, 0, 1, 7, 10, 14, 15, 13, 12, 11};
     bubble_based_shuffle(a, 10);
     print(a, 10);
     bubble_sort(a, 10);
