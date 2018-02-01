@@ -184,7 +184,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--model_dir",
         type=str,
-        default="ADULT_data",
+        default="../exercise/ADULT_data",
         help="Base directory for output models."
     )
     parser.add_argument(
@@ -202,13 +202,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--train_data",
         type=str,
-        default="ADULT_data/adult.train",
+        default="../exercise/ADULT_data/adult.train",
         help="Path to the training data."
     )
     parser.add_argument(
         "--test_data",
         type=str,
-        default="ADULT_data/adult.test",
+        default="../exercise/ADULT_data/adult.test",
         help="Path to the test data."
     )
     FLAGS, unparsed = parser.parse_known_args()
