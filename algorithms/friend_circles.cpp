@@ -31,7 +31,7 @@ private:
     }
 };
 #else
-// UnionFind 并查集
+// UnionFind 并查集 [优化： 路径压缩，记录每个节点所属的根节点，根节点相同说明属于一个圈子 ]
 class Solution{
 public:
     int findCircleNumber(vector<vector<int> >& M)
@@ -53,11 +53,11 @@ public:
         {
             for (j = i + 1; j < n; j++)         // avoid recaculate M[i][j], M[j][i]
             {
-                if (M[i][j])
+                if (M[i][j])                    // 'i' is Friend of 'j'.
                 {
-                    int lead1 = find(i, leads);
-                    int lead2 = find(j, leads);
-                    if (lead1 != lead2)          // if 2 group belongs 2 different leads, merge 2 group to 1
+                    int lead1 = findLeader(i, leads);
+                    int lead2 = findLeader(j, leads);
+                    if (lead1 != lead2)         // if 2 group belongs 2 different leads, merge 2 group to 1
                     {
                         leads[lead1] = lead2;
                         groups--;
@@ -68,9 +68,9 @@ public:
         return groups;
     }
 private:
-    int find(int x, vector<int>& parents)
+    int findLeader(int x, vector<int>& parents)
     {
-        return parents[x] == x ? x : find(parents[x], parents);
+        return parents[x] == x ? x : findLeader(parents[x], parents);
     }
 };
 #endif
