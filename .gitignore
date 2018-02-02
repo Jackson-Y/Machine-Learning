@@ -114,3 +114,4 @@ MNIST-data
 
 # data files
 *.csv
+settings.json
