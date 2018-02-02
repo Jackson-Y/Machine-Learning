@@ -5,19 +5,27 @@ using namespace std;
 
 #ifdef __DFS_SOLUTION__
 class Solution{
+
 public:
+
     int findCircleNumber(vector<vector<int> >& M)
     {
         if (M.empty()) return 0;
+
         int n = M.size();
-        vector<bool> visited(n, false);
         int groups = 0;
+        vector<bool> visited(n, false);
+
         for (int i = 0; i < visited.size(); i++)
         {
             groups += !visited[i] ? dfs(i, M, visited), 1: 0;
         }
+
+        return groups;
     }
+
 private:
+
     void dfs(int i, vector<vector<int> >& M, vector<bool>& visited)
     {
         visited[i] = true;
@@ -33,7 +41,9 @@ private:
 #else
 // UnionFind 并查集 [优化： 路径压缩，记录每个节点所属的根节点，根节点相同说明属于一个圈子 ]
 class Solution{
+
 public:
+
     int findCircleNumber(vector<vector<int> >& M)
     {
         if (M.empty()) return 0;
@@ -65,18 +75,22 @@ public:
                 }
             }
         }
+
         return groups;
     }
+
 private:
+
     int findLeader(int x, vector<int>& parents)
     {
         return parents[x] == x ? x : findLeader(parents[x], parents);
     }
+
 };
+
 #endif
 
-void
-print(vector<vector<int> >& M)
+void print(vector<vector<int> >& M)
 {
     int n = M[0].size();
     cout << "size: " << n << endl;
@@ -91,6 +105,7 @@ print(vector<vector<int> >& M)
     }
     cout << endl;
 }
+
 
 int main(void)
 {
