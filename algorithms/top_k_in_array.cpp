@@ -11,7 +11,7 @@ class BaseSolution{
 
 public:
 
-    // Using C++ Standord function sort().
+    // Using C++ Standard function sort().
     // Time O(nlogn), Space O(1)
     virtual int findKthLargest(vector<int> &nums, int k)
     {
