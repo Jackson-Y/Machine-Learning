@@ -29,8 +29,6 @@ public:
 
         while (fast != NULL && fast->next != NULL)
         {
-            cout << slow->value << ", ";
-
             slow = slow->next;
             fast = fast->next->next;
 
@@ -53,7 +51,6 @@ public:
 
         while(fast != NULL && fast->next != NULL)
         {
-            cout << slow->value << ", ";
             slow = slow->next;
             fast = fast->next->next;
 
@@ -63,7 +60,6 @@ public:
                 Node *q = slow;
                 while (p != q)
                 {
-                    cout << p->value << ", ";
                     ++n;
                     p = p->next;
                     q = q->next;
