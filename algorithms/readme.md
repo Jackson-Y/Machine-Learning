@@ -5,6 +5,6 @@
 3. [house_robber.cpp](https://github.com/Jackson-Y/Machine-Learning/blob/master/algorithms/house_robber.cpp) 聪明的小偷 （LeetCode第337题）
 4. [heap_sort.cpp](https://github.com/Jackson-Y/Machine-Learning/blob/master/algorithms/heap_sort.cpp) 堆排序
 5. [linked_list_cycle.cpp](https://github.com/Jackson-Y/Machine-Learning/blob/master/algorithms/linked_list_cycle.cpp) 判断单链表是否有环及环的入口点（LeetCode第141题）
-6. [topk_in_array.cpp]() 数组中第K大的数（LeetCode第215题）
+6. [top_k_in_array.cpp](https://github.com/Jackson-Y/Machine-Learning/blob/master/algorithms/top_k_in_array.cpp) 数组中第K大的数（LeetCode第215题）
 7. []() 
 8. []() 
