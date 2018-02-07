@@ -1,4 +1,5 @@
 #include <iostream>
+#include <set>
 
 using namespace std;
 
@@ -15,10 +16,11 @@ struct Node{
     Node(int x):value(x),next(NULL){}
 };
 
-// Two Point (fast & slow)
-//
-// Time O(n), Space O(1)
-//
+/*
+Solution 1:
+    Using Two Pointers (fast & slow)
+    Time O(n), Space O(1)
+*/
 class Solution{
 
 public:
@@ -74,6 +76,38 @@ public:
     }
 
 };
+
+
+/* 
+Solution 2:
+    Using Hash Table.
+    Time O(n), Space O(n)
+ */
+class SolutionHT{
+
+public:
+
+    int hasCycle(Node *head)
+    {
+        set<Node*> node_set;
+        pair<set<Node*>::iterator, bool> ret_pair;
+
+        Node *p = head;
+        while(p != NULL && p->next != NULL)
+        {
+            ret_pair = node_set.insert(p);
+            if (ret_pair.second == false)
+            {
+                return 1;
+            }
+            p = p->next;
+        }
+
+        return 0;
+    }
+
+};
+
 
 int main(void)
 {
