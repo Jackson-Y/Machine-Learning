@@ -92,6 +92,19 @@ private:
 
 #else
 
+/*
+    DP (Dynamic Programming)
+        对每个节点：
+        case 1:
+            抢该节点的子节点，即计算子节点的和；
+        case 2:
+            抢该节点和孙子节点，即计算该节点和孙子节点的和；
+
+        最后，去两种情况中，和较大者。
+    
+    空间换时间：
+        每个节点记录两个信息（case 1 && case 2）
+*/
 class Solution {
 
 public:
