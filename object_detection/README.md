@@ -20,14 +20,14 @@ sudo pip install tensorflow-gpu  (For GPU)
 
 - **protobuf**
 
-    While `sudo apt-get install protobuf-compiler`, you may meet the ERROR `E: Unable to locate package protobuf-compiler`. Then you can check the config file `/etc/apt/source.list`: 
-```
-deb http://us.archive.ubuntu.com/ubuntu trusty main multiverse
-```
-    protobuf-compiler is in the **'trusty'**. 
+While `sudo apt-get install protobuf-compiler`, you may meet the ERROR `E: Unable to locate package protobuf-compiler`. Then you can check the config file `/etc/apt/source.list`: 
+    ```
+    deb http://us.archive.ubuntu.com/ubuntu trusty main multiverse
+    ```
+protobuf-compiler is in the **'trusty'**. 
 
-    Also, you can install protobuf with Source Code. See: 
-        http://blog.csdn.net/sunxianliang1/article/details/50723086
+Also, you can install protobuf with Source Code. See: 
+    http://blog.csdn.net/sunxianliang1/article/details/50723086
 
 - **Protobuf Compilation**
 
@@ -39,14 +39,14 @@ protoc object_detection/protos/*.proto --python_out=.
 
 - **Add Libraries to PYTHONPATH**
 
-    1) Temporary Solution
+1) Temporary Solution
 ```
 # From tensorflow/models/research/
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
-    2) Perpetual Solution
+2) Perpetual Solution
 
-    Add to the end of `~/.bashrc` file
+Add to the end of `~/.bashrc` file
 ```
 MODELS_PATH=/home/code/tensorflow/models/research/
 export PYTHONPATH=$PYTHONPATH:$MODELS_PATH:$MODELS_PATH/slim
@@ -58,12 +58,12 @@ export PYTHONPATH=$PYTHONPATH:$MODELS_PATH:$MODELS_PATH/slim
 python object_detection/builders/model_builder_test.py
 ```
 
-    It run into error below:
-    `RuntimeError: module compiled against API version 0xb but this version of numpy is 0xa`
-    and
-    `ImportError: No module named _tkinter, please install the python-tk package`
+It run into error below:
+`RuntimeError: module compiled against API version 0xb but this version of numpy is 0xa`
+and
+`ImportError: No module named _tkinter, please install the python-tk package`
 
-    You can:
+You can:
 ```
 sudo pip install numpy --upgrade
 sudo apt-get install python-tk
