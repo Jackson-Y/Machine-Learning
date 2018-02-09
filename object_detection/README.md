@@ -6,7 +6,7 @@
 **Ubuntu  17.04  Python2.7.13  Tensorflow1.4.0**
 
 ### Step 1: Installation
-
+- **Dependences**
 ```
 sudo apt-get install protobuf-compiler python-pil python-tk python-lxml
 sudo pip install pillow
@@ -16,7 +16,7 @@ sudo pip install tensorflow  (For CPU)
 sudo pip install tensorflow-gpu  (For GPU)
 ```
 
-**protobuf**
+- **protobuf**
 
 While `sudo apt-get install protobuf-compiler`, you may meet the ERROR `E: Unable to locate package protobuf-compiler`. Then you can check the config file `/etc/apt/source.list`: 
 ```
@@ -27,7 +27,7 @@ protobuf-compiler is in the **'trusty'**.
 Also, you can install protobuf with Source Code. See: 
     http://blog.csdn.net/sunxianliang1/article/details/50723086
 
-**Protobuf Compilation**
+- **Protobuf Compilation**
 
 ```
 cd tensorflow/models/research/
@@ -35,7 +35,7 @@ cd tensorflow/models/research/
 protoc object_detection/protos/*.proto --python_out=.
 ```
 
-**Add Libraries to PYTHONPATH**
+- **Add Libraries to PYTHONPATH**
 
 1) Temporary Solution
 ```
@@ -50,7 +50,7 @@ MODELS_PATH=/home/code/tensorflow/models/research/
 export PYTHONPATH=$PYTHONPATH:$MODELS_PATH:$MODELS_PATH/slim
 ```
 
-**Testing the Installation**
+- **Testing the Installation**
 
 ```
 python object_detection/builders/model_builder_test.py
