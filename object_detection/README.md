@@ -122,6 +122,18 @@ Up to now, the `tensorflow/models/research/` should have:
     --pipeline_config_path=ssd_inception_v2_pets.config \
     --train_dir=train_result/
 ```
+For this step, it run into ERROR in my machine:
+
+    INFO:tensorflow:Starting Session.
+    INFO:tensorflow:Starting Queues.
+    INFO:tensorflow:global_step/sec: 0
+    Killed
+
+The cause of the ERROR is that It was running out of memory. So,
+I changed  `batch_size = 1`, it all worked.
+
+Reference:
+    [Stack Overflow](https://stackoverflow.com/questions/44833085/tensorflow-object-detection-killed-before-starting)
 
 ### Step 4: Tensorboard
 ```
@@ -136,5 +148,14 @@ Use explorer: `http://localhost:6006`
 　　　　--checkpoint_path train_result/model.ckpt-445 \
 　　　　--inference_graph_path ./output_inference_graph.pb
 ```
+Export the trained pb file: `output_inference_graph.pb`
+
+### Step 6: Using pb File to enjoy object detection
+
+You MUST complete the Step 1 before you start.
+
+[Object detection in 30s](https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb) Jupyter Notebook
+[Object detection in 30s](https://github.com/Jackson-Y/Machine-Learning/blob/master/object_detection/object_detection_tutorial.py) python IDE
+
 
 Completed! Good Luck!
