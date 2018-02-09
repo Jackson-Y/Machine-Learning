@@ -146,13 +146,13 @@ object_detection/export_inference_graph.py --input_type image_tensor  \
 ```
 Export the trained pb file: `output_inference_graph.pb`
 
-### Step 6: Using pb File to enjoy object detection
+### Step 6: Model Application
 
 You MUST complete the Step 1 before you start.
 
-[Object detection in 30s](https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb) Jupyter Notebook
+[Object detection application in 30s](https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb) Jupyter Notebook
 
-[Object detection in 30s](https://github.com/Jackson-Y/Machine-Learning/blob/master/object_detection/object_detection_tutorial.py) python IDE
+[Object detection application in 30s](https://github.com/Jackson-Y/Machine-Learning/blob/master/object_detection/object_detection_tutorial.py) python IDE
 
 
 Completed! 
