@@ -154,6 +154,8 @@ You MUST complete the Step 1 before you start.
 
 [Object detection application in 30s](https://github.com/Jackson-Y/Machine-Learning/blob/master/object_detection/object_detection_tutorial.py) python IDE
 
+![image][C:\Users\moxiao\Desktop\信息抽取\cat.png]
+![image][C:\Users\moxiao\Desktop\信息抽取\dog.png]
 
 Completed! 
 
