@@ -156,7 +156,7 @@ You MUST complete the Step 1 before you start.
 
 ![CAT](https://github.com/Jackson-Y/Machine-Learning/blob/master/object_detection/pictures/result_cat.png)
 
-![DOG][https://github.com/Jackson-Y/Machine-Learning/blob/master/object_detection/pictures/result_dog.png]
+![DOG](https://github.com/Jackson-Y/Machine-Learning/blob/master/object_detection/pictures/result_dog.png)
 
 Completed! 
 
