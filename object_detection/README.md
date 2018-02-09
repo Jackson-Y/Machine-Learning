@@ -45,7 +45,6 @@ protoc object_detection/protos/*.proto --python_out=.
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
 2) Perpetual Solution
-
 Add to the end of `~/.bashrc` file
 ```
 MODELS_PATH=/home/code/tensorflow/models/research/
@@ -57,7 +56,6 @@ export PYTHONPATH=$PYTHONPATH:$MODELS_PATH:$MODELS_PATH/slim
 ```
 python object_detection/builders/model_builder_test.py
 ```
-
 It run into error below:
 `RuntimeError: module compiled against API version 0xb but this version of numpy is 0xa`
 and
@@ -158,4 +156,5 @@ You MUST complete the Step 1 before you start.
 
 
 Completed! 
+
 **Good Luck!**
