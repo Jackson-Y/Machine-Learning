@@ -8,6 +8,12 @@
 **Tensorflow1.4.0**
 
 ### Step 1: Installation
+- **Install Tensorflow API**
+```
+git clone https://github.com/tensorflow/models.git
+```
+
+
 - **Dependences**
 ```
 sudo apt-get install protobuf-compiler python-pil python-tk python-lxml
