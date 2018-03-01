@@ -4,7 +4,9 @@
 [Tensorflow Object Detection API](https://github.com/tensorflow/models/blob/master/research/object_detection)
 
 **Ubuntu17.04**
+
 **Python2.7.13**
+
 **Tensorflow1.4.0**
 
 ### Step 1: Installation
