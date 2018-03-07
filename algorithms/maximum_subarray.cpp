@@ -5,8 +5,8 @@ using namespace std;
 
 
 /*
-    Time O(n)
-*/
+ *  Time O(n)
+ */
 
 class Solution{
 
