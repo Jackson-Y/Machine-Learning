@@ -1,5 +1,14 @@
+# Copyright 2018 CNKI Authors. All Rights Reserved.
+#
+# Date: 2018-03-13
+#================================================================
 # coding: utf-8
+r""" Tensorflow object detection in X minutes.
 
+To run,
+    python object_detection_tutorial.py
+
+"""
 import numpy as np
 import os
 import six.moves.urllib as urllib
